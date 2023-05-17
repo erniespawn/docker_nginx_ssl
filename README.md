@@ -9,13 +9,12 @@ This is a docker container running debian with SSL certificate on nginx.
 # How to start it?
 
 1. This will download Ubuntu latest image and install nginx with ssl certificate.
-``` 
-docker build -t ubuntu:1.1 .
-```
+``` docker build -t ubuntu:1.1 . ```
+
+2. This will run the docker 
+``` docker run -it --rm -d -p 8080:80 -p 443:443 --name my-ubuntu6 ubuntu:1.1 ``` 
 
 
-
-2. Run a local redis cluster using the ready make target `make start-redis`
 
 # Deployment
 

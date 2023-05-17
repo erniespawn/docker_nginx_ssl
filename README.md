@@ -45,7 +45,8 @@ root@d9af3f5e4234:/#
 
 # Testing SSL part
 
-## Run openssl command on localhost port 443
+## Run openssl command on localhost port 443.
+Here you see that the Certificate chain is broken.
 
 
 ```

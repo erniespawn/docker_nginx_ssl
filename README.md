@@ -8,8 +8,7 @@ This is a docker container running debian with SSL certificate on nginx.
 
 # How to start it?
 
-### Docker build command.
-This will download Ubuntu latest image and install nginx with ssl certificate.
+1. This will download Ubuntu latest image and install nginx with ssl certificate.
 ``` 
 docker build -t ubuntu:1.1 .
 ```

@@ -43,10 +43,27 @@ root@d9af3f5e4234:/#
 ```
 
 
-# Deployment
+# Testing SSL part
 
-see gitlab ci config
+## Run openssl command on localhost port 443
 
+
+```
+ernie@debianHome:~/PycharmProjects/alldockers/ngnix$ openssl s_client -connect localhost:443
+CONNECTED(00000003)
+Can't use SSL_get_servername
+depth=0 C = GB, ST = London, L = London, O = Global Security, OU = IT Department, CN = example.com
+verify error:num=18:self signed certificate
+verify return:1
+depth=0 C = GB, ST = London, L = London, O = Global Security, OU = IT Department, CN = example.com
+verify return:1
+---
+Certificate chain
+ 0 s:C = GB, ST = London, L = London, O = Global Security, OU = IT Department, CN = example.com
+   i:C = GB, ST = London, L = London, O = Global Security, OU = IT Department, CN = example.com
+---
+
+```
   
 1. FAQ
 ------

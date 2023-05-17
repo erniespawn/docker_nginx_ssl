@@ -90,6 +90,12 @@ Certificate chain
 Server certificate
 ```
 
+Showing the issuer
 ![Screenshot](pictures/bad-cert.png)
 ![Screenshot](pictures/good-key.png)
+
+
+Showing ....
+![Screenshot](pictures/bad-key.png)
+![Screenshot](pictures/good-cert.png)
 

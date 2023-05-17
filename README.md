@@ -62,16 +62,5 @@ Certificate chain
  0 s:C = GB, ST = London, L = London, O = Global Security, OU = IT Department, CN = example.com
    i:C = GB, ST = London, L = London, O = Global Security, OU = IT Department, CN = example.com
 ---
-
 ```
-  
-1. FAQ
-------
-> What is the purpose?
 
-```yml
-
-
-
- 
-```

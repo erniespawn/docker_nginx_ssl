@@ -95,7 +95,7 @@ Showing the issuer
 ![Screenshot](pictures/good-key.png)
 
 
-Showing ....
+Showing the keys 
 ![Screenshot](pictures/bad-key.png)
 ![Screenshot](pictures/good-cert.png)
 

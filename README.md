@@ -43,7 +43,7 @@ root@d9af3f5e4234:/#
 ```
 
 
-# Testing SSL part
+# Difference between self sign and signed by known authority.
 
 ## Run openssl command on localhost port 443.
 Here you see that the Certificate chain is broken. Does not have 1 and 2 in the chain.

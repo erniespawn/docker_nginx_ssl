@@ -8,8 +8,10 @@ This is a docker container running debian with SSL certificate on nginx.
 
 # How to start it?
 
-1.  
-docker build -t ubuntu:1.1 . 
+1. Docker build command.
+``` 
+docker build -t ubuntu:1.1 .
+```
 2. Run a local redis cluster using the ready make target `make start-redis`
 
 # Deployment

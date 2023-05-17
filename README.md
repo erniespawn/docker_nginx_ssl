@@ -18,6 +18,10 @@ docker build -t ubuntu:1.1 .
 docker run -it --rm -d -p 8080:80 -p 443:443 --name my-ubuntu6 ubuntu:1.1 
 ``` 
 
+3. Connect to the docker with terminal access
+```
+docker container exec -it my-ubuntu6 /bin/bash
+```
 
 
 # Deployment

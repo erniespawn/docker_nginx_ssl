@@ -91,4 +91,5 @@ Server certificate
 ```
 
 ![Screenshot](pictures/bad-cert.png)
+![Screenshot](pictures/good-cert.png)
 

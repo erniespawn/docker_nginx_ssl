@@ -63,5 +63,29 @@ Certificate chain
  0 s:C = GB, ST = London, L = London, O = Global Security, OU = IT Department, CN = example.com
    i:C = GB, ST = London, L = London, O = Global Security, OU = IT Department, CN = example.com
 ---
+Server certificate
+```
+
+
+## Run openssl command on Google port 443.
+```
+ernie@debianHome:~/PycharmProjects/alldockers/ngnix$ openssl s_client -connect www.google.com:443
+CONNECTED(00000003)
+depth=2 C = US, O = Google Trust Services LLC, CN = GTS Root R1
+verify return:1
+depth=1 C = US, O = Google Trust Services LLC, CN = GTS CA 1C3
+verify return:1
+depth=0 CN = www.google.com
+verify return:1
+---
+Certificate chain
+ 0 s:CN = www.google.com
+   i:C = US, O = Google Trust Services LLC, CN = GTS CA 1C3
+ 1 s:C = US, O = Google Trust Services LLC, CN = GTS CA 1C3
+   i:C = US, O = Google Trust Services LLC, CN = GTS Root R1
+ 2 s:C = US, O = Google Trust Services LLC, CN = GTS Root R1
+   i:C = BE, O = GlobalSign nv-sa, OU = Root CA, CN = GlobalSign Root CA
+---
+Server certificate
 ```
 

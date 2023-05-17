@@ -90,3 +90,5 @@ Certificate chain
 Server certificate
 ```
 
+![Screenshot](pictures/bad-cert.png)
+

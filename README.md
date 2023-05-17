@@ -23,6 +23,20 @@ docker run -it --rm -d -p 8080:80 -p 443:443 --name my-ubuntu6 ubuntu:1.1
 docker container exec -it my-ubuntu6 /bin/bash
 ```
 
+4. Start the nginx server. 
+
+```
+ernie@debianHome:~/PycharmProjects/alldockers/ngnix$ docker container exec -it my-ubuntu6 /bin/bash
+root@d9af3f5e4234:/#
+root@d9af3f5e4234:/#
+root@d9af3f5e4234:/#
+root@d9af3f5e4234:/#
+root@d9af3f5e4234:/#
+root@d9af3f5e4234:/# service nginx start
+ * Starting nginx nginx                                                                                                                                                  [ OK ]
+root@d9af3f5e4234:/#
+```
+
 
 # Deployment
 

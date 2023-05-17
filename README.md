@@ -46,7 +46,7 @@ root@d9af3f5e4234:/#
 # Testing SSL part
 
 ## Run openssl command on localhost port 443.
-Here you see that the Certificate chain is broken.
+Here you see that the Certificate chain is broken. Does not have 1 and 2 in the chain.
 
 
 ```
@@ -68,6 +68,7 @@ Server certificate
 
 
 ## Run openssl command on Google port 443.
+Google Certificate chain has 1 & 2
 ```
 ernie@debianHome:~/PycharmProjects/alldockers/ngnix$ openssl s_client -connect www.google.com:443
 CONNECTED(00000003)

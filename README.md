@@ -28,8 +28,17 @@ docker container exec -it my-ubuntu6 /bin/bash
 ```
 ernie@debianHome:~/PycharmProjects/alldockers/ngnix$ docker container exec -it my-ubuntu6 /bin/bash
 root@d9af3f5e4234:/#
+root@d9af3f5e4234:/# service nginx status
+ * nginx is not running
+root@d9af3f5e4234:/#
+root@d9af3f5e4234:/#
 root@d9af3f5e4234:/# service nginx start
  * Starting nginx nginx                                                                                                                                                  [ OK ]
+root@d9af3f5e4234:/#
+root@d9af3f5e4234:/# nginx -t
+nginx: the configuration file /etc/nginx/nginx.conf syntax is ok
+nginx: configuration file /etc/nginx/nginx.conf test is successful
+root@d9af3f5e4234:/# nginx -s reload
 root@d9af3f5e4234:/#
 ```
 

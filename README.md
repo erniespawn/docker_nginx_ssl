@@ -99,3 +99,17 @@ Showing the keys
 ![Screenshot](pictures/bad-key.png)
 ![Screenshot](pictures/good-cert.png)
 
+
+
+
+# Github action with docker hub
+
+To push new version to docker hub must update tag version.
+
+```
+git tag -a v0.0.3 -m "Updated username"
+git push origin v0.0.3
+```
+
+
+

@@ -15,5 +15,5 @@ jobs:
       - name: docker live test
         run: |
           docker pull alpine
-          docker tag alpine ${{ secrets.DOCKER_TEST_TAG }}
-          docker push ${{ secrets.DOCKER_TEST_TAG }}
+          docker tag alpine 3.18.0
+          docker push 3.18.0

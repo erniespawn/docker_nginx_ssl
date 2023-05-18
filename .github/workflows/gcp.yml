@@ -1,10 +1,19 @@
----
-- name: Build and publish image to GCR
-  uses: carbonchain/action-container-registry@v1.1
-  with:
-    project_id: github-actions-384318
-    dockerfile: ../
-    image: gcr.io/github-actions-384318/ubuntu
-    service_account_key: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+on: [push]
 
-
+jobs:
+  test_run:
+    runs-on: ubuntu-latest
+    name: Test job
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Login Docker
+        uses: ./ # Uses an action in the root directory
+        with:
+          SERVICE_ACCOUNT_KEY: ${{ secrets.SERVICE_ACCOUNT_KEY }}
+          HOST: gcr.io
+      - name: docker live test
+        run: |
+          docker pull alpine
+          docker tag alpine ${{ secrets.DOCKER_TEST_TAG }}
+          docker push ${{ secrets.DOCKER_TEST_TAG }}

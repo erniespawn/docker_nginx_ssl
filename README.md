@@ -111,5 +111,11 @@ git tag -a v0.0.3 -m "Updated username"
 git push origin v0.0.3
 ```
 
+Push without changes
+
+```
+git commit --allow-empty -m "Trigger CI"
+```
+
 
 

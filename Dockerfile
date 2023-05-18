@@ -25,4 +25,3 @@ COPY www.example.com.conf /etc/nginx/conf.d/.
 # Run a command to start the application
 #CMD ["python3", "app.py"]
 
-

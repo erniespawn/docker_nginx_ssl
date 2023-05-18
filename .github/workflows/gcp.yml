@@ -1,6 +1,6 @@
 ---
 name: Build and Push Python image to Google Cloud Platform
-  on:
+on:
     push:
       branches: [ main ]
   jobs:
